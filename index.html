@@ -3,71 +3,86 @@
 <head>
 	<title>Cristiano Ronaldo</title>
 	<style>
-		body {
-			margin: 0;
-			padding: 0;
-			overflow: hidden;
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			height: 100vh;
-		}
 
-		.container {
-			display: flex;
-			flex-wrap: wrap;
-			align-items: center;
-			justify-content: center;
-			width: 100%;
-			height: 100%;
-		}
+    .container {
+  display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+  flex-wrap: wrap;
+  padding: 5px;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+	margin-top: 65px;
+}
 
-		.item {
-			flex: 1 1 25%;
-			margin: 20px;
-			border-radius: 10%;
-			overflow: hidden;
-			position: relative;
-		}
+.box {
+  margin: 10px;
+  padding: 15px;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 30px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+	position: relative;
+}
 
-		.item img {
-			max width: 100%;
-			max height: 100%;
-			object-fit: cover;
-		}
+.box img {
+  width: 100%;
+  height: 500px;
+  border-radius: 30px;
+  margin-bottom: 10px;
+  object-fit: cover;
+  object-position: center;
 
-		.item .text {
-			position: absolute;
-			top: 50%;
-			left: 50%;
-			transform: translate(-50%, -50%);
-			font-size: 2em;
-			font-weight: bold;
-			color: #fff;
-			text-shadow: 2px 2px 2px #000;
-			text-align: center;
-			z-index: 1;
-		}
+}
+
+.box h2 {
+	margin: 1px;
+	font-family: sans-serif;
+	color: #fff;
+	text-shadow: 0 -5px 20px rgba(0, 0, 0, 0.9);
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+.box p {
+  font-size: 1 rem;
+	font-family: sans-serif;
+	margin: 1px;
+	padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color:	 #C23B22;
+	}
+
 	</style>
 </head>
 <body>
-	<div class="container">
-		<div class="item">
-			<img src="https://media.gettyimages.com/id/1454029167/es/foto/cristiano-ronaldo-smiles-as-he-is-unveiled-as-an-al-nassr-player-at-mrsool-park-stadium-on.jpg?s=612x612&w=0&k=20&c=9zmDQV6ZEeYocE-3oCZ-V6aPNPzy2jM5w-SJsO2miOg=" alt="Cristiano Ronaldo">
-			<div class="text">The GOAT</div>
-		</div>
-		<div class="item">
-			<img src="https://media.gettyimages.com/id/1245965880/es/foto/al-nassrs-new-forward-cristiano-ronaldo-greets-the-fans-during-his-unveiling-at-the-mrsool.jpg?s=612x612&w=0&k=20&c=hV46l61pz2Lbp-FxxoJOCZa9VCMsRQyCitLsnkksZf4=" alt="Cristiano Ronaldo">
-			<div class="text">The Phenomenon</div>
-		</div>
-		<div class="item">
-			<img src="https://media.gettyimages.com/id/1458529419/es/foto/cristiano-ronaldo-of-al-nassr-leads-the-team-out-prior-to-the-saudi-pro-league-match-between.jpg?s=612x612&w=0&k=20&c=5tHseu1TldFB8WRY-bLbSW4j9G21CVB3JEAK36gJvBA=" alt="Cristiano Ronaldo">
-			<div class="text">The Legend</div>
-		</div>
-		<div class="item">
-			<img src="https://media.gettyimages.com/id/1245970744/es/foto/portuguese-superstar-ronaldo-wears-jersey-of-al-nassr-before-an-introductory-ceremony-at.jpg?s=612x612&w=0&k=20&c=1g2RsXBN7EKsGBI4STHeXQTot62mEZ5r4NOudh7QmIY=" alt="Cristiano Ronaldo">
-			<div class="text">The Master</div>
-		</div>
-	</div>
+  <div class="container">
+    <div class="box">
+      <img src="https://ca-times.brightspotcdn.com/dims4/default/02fb32a/2147483647/strip/true/crop/5784x3855+0+0/resize/1200x800!/quality/80/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2Ff8%2F23%2Fbb35c63b461c845968d7c029d844%2Fwcup-world-cup-photo-gallery-21279.jpg" alt="Imagen 1">
+      <h2>CRISTIANO RONALDO</h2>
+      <p>SIUUUU.</p>
+    </div>
+    <div class="box">
+      <img src="https://media.gettyimages.com/id/1458529419/es/foto/cristiano-ronaldo-of-al-nassr-leads-the-team-out-prior-to-the-saudi-pro-league-match-between.jpg?s=612x612&w=0&k=20&c=5tHseu1TldFB8WRY-bLbSW4j9G21CVB3JEAK36gJvBA=" alt="Imagen 2">
+      <h2>CRISTIANO RONALDO</h2>
+      <p>RONALDOOO.</p>
+    </div>
+    <div class="box">
+      <img src="https://media.gettyimages.com/id/1245965880/es/foto/al-nassrs-new-forward-cristiano-ronaldo-greets-the-fans-during-his-unveiling-at-the-mrsool.jpg?s=612x612&w=0&k=20&c=hV46l61pz2Lbp-FxxoJOCZa9VCMsRQyCitLsnkksZf4=" alt="Imagen 3">
+      <h2>CRISTIANO RONALDO</h2>
+      <p>The best one.</p>
+    </div>
+    <div class="box">
+      <img src="https://media.gettyimages.com/id/1454029167/es/foto/cristiano-ronaldo-smiles-as-he-is-unveiled-as-an-al-nassr-player-at-mrsool-park-stadium-on.jpg?s=612x612&w=0&k=20&c=9zmDQV6ZEeYocE-3oCZ-V6aPNPzy2jM5w-SJsO2miOg=" alt="Imagen 4">
+      <h2>CRISTIANO RONALDO</h2>
+      <p>The goat.</p>
+    </div>
+  </div>
 </body>
 </html>
